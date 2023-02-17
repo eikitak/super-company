@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>コーポレート</title>
+</head>
+
+<body>
+    <header>
+        <div id="head">
+            <h1 class="logo"><a href="index.html">COMPANY</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="news.html">NEWS</a><span></span></li>
+                    <li><a href="service.html">SERVICE</a><span></span></li>
+                    <li><a href="works.html">WORKS</a><span></span></li>
+                    <li><a href="company.html">COMPANY</a><span></span></li>
+                    <li><a href="recruit.html">RECRUIT</a><span></span></li>
+                    <li><a href="contact.html">CONTACT</a><span></span></li>
+                </ul>
+            </nav>
+        </div>
+        <button type="button" id="nav-btn"></button>
+    </header>
+
+    <section id="page-head">
+        <h2>CONTACT</h2>
+        <p class="sub">お問い合わせ</p>
+    </section>
+
+    <section class="breadclumb">
+        <a href="index.html">HOME</a>
+        <p>></p>
+        <p>CONTACT</p>
+    </section>
+
+    <main>
+        <section class="p-contact">
+            <p>ありとあらゆる業務に対応可能です。<br class="brCompany">お気軽にご相談ください。</p>
+            <div class="p-contact-form">
+
+                <form class="c-form">
+                    <div class="c-form-item">
+                        <div class="c-form-title">お問い合わせ種別<span class="c-form-require">*必須</span></div>
+                        <div class="c-form-box">
+                            <span class="c-form-radio">
+                                <input type="radio" id="type01" name="type" value="お仕事のご依頼・ご相談" checked><label
+                                    for="type01">お仕事のご依頼・ご相談</label></span>
+                            <span class="c-form-radio"><input type="radio" id="type02" name="type" value="お見積りのご依頼"><label
+                                    for="type02">お見積りのご依頼</label></span>
+                            <span class="c-form-radio"><input type="radio" id="type03" name="type" value="採用について"><label
+                                    for="type03">採用について</label></span>
+                            <span class="c-form-radio"><input type="radio" id="type04" name="type" value="その他"><label
+                                    for="type04">その他</label></span>
+                        </div>
+                    </div>
+
+                    <div class="c-form-item">
+                        <label for="name" class="c-form-title">お名前<span class="c-form-require">*必須</span></label>
+                        <input type="text" id="name" name="name" required class="c-form-input">
+                    </div>
+                    <div class="c-form-item">
+                        <label for="company" class="c-form-title">会社名<span class="c-form-require">*必須</span></label>
+                        <input type="text" id="company-name" name="company" required class="c-form-input">
+                    </div>
+                    <div class="c-form-item">
+                        <label for="email" class="c-form-title">メールアドレス<span class="c-form-require">*必須</span></label>
+                        <input type="email" id="email" name="email" required class="c-form-input">
+                    </div>
+                    <div class="c-form-item">
+                        <label for="tel" class="c-form-title">電話番号<span class="c-form-note">（半角数字ハイフンなし）</span></label>
+                        <input type="tel" id="tel" name="tel" class="c-form-input">
+                    </div>
+
+                    <div class="c-form-item">
+                        <label for="comment" class="c-form-title">お問い合わせ内容</label>
+                        <textarea id="comment" name="comment" placeholder="お問い合わせ内容を具体的にご記入くださいませ。"
+                            class="c-form-textarea"></textarea>
+                    </div>
+
+                    <div class="c-form-item">
+                        <label for="job" class="c-form-title">当社をどちらでお知りになりましたか？<span
+                                class="c-form-require">*必須</span></label>
+                        <select id="job" name="job" required class="c-form-select">
+                            <option value="">選択してください</option>
+                            <option value="Google/Yahoo検索">Google/Yahoo検索</option>
+                            <option value="SNS">SNS</option>
+                            <option value="ブログ">ブログ</option>
+                            <option value="友人や知人">友人や知人</option>
+                            <option value="その他">その他</option>
+                        </select>
+                    </div>
+                        <button type="submit" class="btn more-btn">送信する</button>
+
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="news.html">NEWS</a></li>
+                <li><a href="service.html">SERVICE</a></li>
+                <li><a href="works.html">WORKS</a></li>
+            </ul>
+            <ul>
+                <li><a href="company.html">COMPANY</a></li>
+                <li><a href="recruit.html">RECRUIT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <p>©SUPER COMPANY</p>
+    </footer>
+
+    <script src="js/asset/splide.min.js"></script>
+    <script src="js/asset/splide-extension-auto-scroll.min.js"></script>
+    <script src="js/asset/gsap.3.11.4.min.js"></script>
+    <script src="js/asset/ScrollTrigger.3.11.4min.js"></script>
+    <script src="js/contact-script.js"></script>
+</body>
+
+</html>
