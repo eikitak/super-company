@@ -2,6 +2,16 @@
 {
 
 
+    gsap.timeline()
+    .to('body', {
+        opacity: 1,
+        duration: .2,
+        ease: 'power4.in'
+    })
+    .to('body', {
+        backgroundColor: '#fff',
+        duration: .2
+    });
 
 
 
